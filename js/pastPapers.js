@@ -15,7 +15,7 @@ xhr.addEventListener("readystatechange", function () {
 // setData(e, 1)
 
 
-xhr.open("GET", "https://lms.brightoninstitute-colombo.org:8081/services/education/api/home/_search/release-paper-news?query=(pageType:" + pageType + ")");
+xhr.open("GET", "https://lms.brightoninstitute-colombo.org:8881/services/education/api/home/_search/release-paper-news?query=(pageType:" + pageType + ")");
  
 
 xhr.send();
