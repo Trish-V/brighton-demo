@@ -26,5 +26,11 @@ function setData(e, i) {
   var head = document.getElementById('head' + (i + 1))
   var date = document.getElementById('date' + (i + 1))
   var des = document.getElementById('des' + (i + 1))
+
+
+  img.src= e.thumbnail
+  head.text= e.title
+  date.text= e.createdDate
+  des.text= e.description
    
 }
