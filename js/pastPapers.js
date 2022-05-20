@@ -15,9 +15,8 @@ xhr.addEventListener("readystatechange", function () {
 // setData(e, 1)
 
 
-xhr.open("GET", "http://lms.brightoninstitute-colombo.org:8080/services/education/api/home/_search/release-paper-news?query=(pageType:" + pageType + ")");
-xhr.setRequestHeader("origin", "http://localhost:8080");
-xhr.setRequestHeader("referer", "http://localhost:8080");
+xhr.open("GET", "https://lms.brightoninstitute-colombo.org:8081/services/education/api/home/_search/release-paper-news?query=(pageType:" + pageType + ")");
+ 
 
 xhr.send();
 
