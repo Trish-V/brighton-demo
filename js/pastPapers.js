@@ -1,6 +1,6 @@
  
-var xhr = new XMLHttpRequest();
-// xhr.withCredentials = true;
+// var xhr = new XMLHttpRequest();
+// // xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function() {
   if(this.readyState === 4) {
@@ -8,10 +8,24 @@ xhr.addEventListener("readystatechange", function() {
   }
 });
 
-xhr.open("GET", "https://lms.brightoninstitute-colombo.org:8881/services/education/api/home/_search/release-paper-news?query="+pageType);
-xhr.setRequestHeader("Accept", "application/json"); 
-xhr.setRequestHeader("Access-Control-Allow-Origin", "http://localhost:5500"); 
+var url ='https://173.82.219.163/services/education/api/home/_search/release-paper-news?query=*'
+var url2 ="https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query="+pageType
+xhr.open("GET", url);
+xhr.setRequestHeader("Accept", "application/json");  
 xhr.send();
+
+
+
+// var settings = {
+//   "url": "https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query=*",
+//   "method": "GET",
+//   "timeout": 0,
+// };
+
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+// });
+
 
 function setData(e, i) {
   var img = document.getElementById('img' + (i + 1))
