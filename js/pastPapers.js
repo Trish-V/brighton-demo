@@ -16,15 +16,15 @@ xhr.send();
 
 
 
-// var settings = {
-//   "url": "https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query=*",
-//   "method": "GET",
-//   "timeout": 0,
-// };
+var settings = {
+  "url": "https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query=*",
+  "method": "GET",
+  "timeout": 0,
+};
 
-// $.ajax(settings).done(function (response) {
-//   console.log(response);
-// });
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 
 
 function setData(e, i) {
