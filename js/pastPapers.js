@@ -1,23 +1,16 @@
-// WARNING: For GET requests, body is set to null by browsers.
-
+ 
 var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
+// xhr.withCredentials = true;
 
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === 4) {
+xhr.addEventListener("readystatechange", function() {
+  if(this.readyState === 4) {
     console.log(this.responseText);
-    var array = JSON.parse(this.responseText)
-    array.array.forEach((e, i) => {
-    });
   }
 });
 
-// setData(e, 1)
-
-
-xhr.open("GET", "https://lms.brightoninstitute-colombo.org:8881/services/education/api/home/_search/release-paper-news?query=(pageType:" + pageType + ")");
- 
-
+xhr.open("GET", "http://lms.brightoninstitute-colombo.org:8080/services/education/api/home/_search/release-paper-news?query="+pageType);
+xhr.setRequestHeader("Accept", "application/json"); 
+xhr.setRequestHeader("Access-Control-Allow-Origin", "http://localhost:5500"); 
 xhr.send();
 
 function setData(e, i) {
