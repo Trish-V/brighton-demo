@@ -8,7 +8,7 @@ xhr.addEventListener("readystatechange", function() {
   }
 });
 
-var url ='https://173.82.219.163/services/education/api/home/_search/release-paper-news?query=*'
+var url ='https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query=*'
 var url2 ="https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query="+pageType
 xhr.open("GET", url);
 xhr.setRequestHeader("Accept", "application/json");  
