@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 function setData(e, i) {
-  document.getElementById('blog' + i).style.display = 'block'
+  document.getElementById('blog' + (i+1)).style.display = 'block'
 
   var img = document.getElementById('img' + (i + 1))
   var head = document.getElementById('head' + (i + 1))
