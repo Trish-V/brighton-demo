@@ -26,6 +26,6 @@ function setData(e, i) {
   img.src= 'data:image/jpeg;base64,'+e.thumbnail
   head.text= e.title
   date.text= e.createdDate
-  des.text= e.description
+  des.innerHTML= e.description
    
 }
