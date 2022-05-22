@@ -23,7 +23,7 @@ function setData(e, i) {
   var des = document.getElementById('des' + (i + 1))
 
 
-  img.src= 'data:image/jpeg;base64,/'+e.thumbnail
+  img.src= 'data:image/jpeg;base64,'+e.thumbnail
   head.text= e.title
   date.text= e.createdDate
   des.text= e.description
