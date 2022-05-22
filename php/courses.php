@@ -3,7 +3,7 @@
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query='+$_GET['pageType'],
+  CURLOPT_URL => 'https://lms.brightoninstitute-colombo.org/services/education/api/home/_search/release-paper-news?query='. $_GET['pageType'],
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => '',
   CURLOPT_MAXREDIRS => 10,
