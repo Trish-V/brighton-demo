@@ -928,6 +928,8 @@ section
 	padding-top: 13px;
 	padding-bottom: 4px;
 }
+
+
 .accordion_container:not(:last-child)
 {
 	margin-bottom: 10px;
