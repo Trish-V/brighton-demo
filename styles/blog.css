@@ -1,6 +1,7 @@
 @charset "utf-8";
 #img1, #img2 , #img3, #img4, #img5, #img6, #img7{
-	object-fit: cover
+	object-fit: cover;
+	background-size: cover;
 } 
 /* CSS Document */
 
