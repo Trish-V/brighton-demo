@@ -11,7 +11,7 @@ xhr.addEventListener("readystatechange", function() {
   }
 });
  
-xhr.open("GET", "https://brightoninstitute-colombo.org/php/courses.php?query="+pageType);
+xhr.open("GET", "https://brightoninstitute-colombo.org/php/courses.php?query=(pageType:"+pageType+")");
 xhr.setRequestHeader("Accept", "application/json");  
 xhr.send();
 
