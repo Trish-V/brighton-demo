@@ -4,7 +4,7 @@ xhr.withCredentials = true;
 
 xhr.addEventListener("readystatechange", function() {
   if(this.readyState === 4) {
-    console.log( JSON.stringify( this.responseText));
+    console.log( JSON.parse( this.responseText));
     JSON.parse(this.responseText).forEach((element,i) => {
       setData(element,i)
     });
