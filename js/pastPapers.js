@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
   [1, 2, 3, 4, 5, 6, 7].forEach(e => {
-    document.getElementById('blog' + e).style.opacity = '0'
+    document.getElementById('blog' + e).style.opacity = '0.3'
   })
 
   var xhr = new XMLHttpRequest();
