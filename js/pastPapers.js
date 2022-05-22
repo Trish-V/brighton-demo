@@ -35,9 +35,9 @@ function setData(e, i) {
 
 
   img.src = 'data:image/jpeg;base64,' + e.thumbnail
-  // head.text = 'Download : ' + e.title
-  // head.href = ''
-  // date.text = e.createdDate
-  // des.innerHTML = e.description
+  head.text = 'Download : ' + e.title
+  head.href = ''
+  date.text = e.createdDate
+  des.innerHTML = e.description
 
 }
