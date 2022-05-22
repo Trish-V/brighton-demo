@@ -63,15 +63,16 @@ div
 	object-fit: cover;
 	background-size: cover; 
 	background-repeat: no-repeat;
-	background-position: center;
-	max-height: 200px
+	background-position: center; 
 } 
 
 .blog_img_thumb{
-	object-fit: cover;
-	background-size: cover; 
+	object-fit: cover !important;
+	background-size: cover !important; 
 	background-repeat: no-repeat;
 	background-position: center;
+	width: 100% !important;
+
 }
 
 
