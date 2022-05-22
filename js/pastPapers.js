@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
   [1, 2, 3, 4, 5, 6, 7].forEach(e => {
-    document.getElementById('blog' + e).style.display = 'none'
+    document.getElementById('blog' + e).style.opacity = '0'
   })
 
   var xhr = new XMLHttpRequest();
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 function setData(e, i) {
-  document.getElementById('blog' + (i+1)).style.display = 'block'
+  document.getElementById('blog' + (i+1)).style.opacity = '1'
 
   var img = document.getElementById('img' + (i + 1))
   var head = document.getElementById('head' + (i + 1))
