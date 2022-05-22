@@ -67,7 +67,7 @@ div
 	max-height: 200px
 } 
 
-.blog_post_image{
+.blog_img_thumb{
 	object-fit: cover;
 	background-size: cover; 
 	background-repeat: no-repeat;
