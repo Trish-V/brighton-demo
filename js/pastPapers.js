@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function (event) {
   [1, 2, 3, 4, 5, 6, 7].forEach(e => {
-    document.getElementById('blog' + e).style.opacity = '0.3'
+    document.getElementById('blog' + e).style.opacity = '0'
   })
 
   var xhr = new XMLHttpRequest();
@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
-      console.log(JSON.parse(this.responseText));
-      JSON.parse(this.responseText).forEach((element, i) => {
+      console.log(JSON.parse(this.responseText)); 
+      JSON.parse(this.responseText).slice(0,6).forEach((element, i) => {
         setData(element, i)
       });
     }
