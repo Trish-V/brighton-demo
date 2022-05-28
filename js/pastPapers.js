@@ -36,7 +36,7 @@ function setData(e, i) {
 
   img.src = 'data:image/jpeg;base64,' + e.thumbnail
   head.text = 'Download : ' + e.title
-  head.href = 'data:application/pdf;base64,'+e.file
+  head.href = e.file
   date.text = e.createdDate
   des.innerHTML = e.description
 
