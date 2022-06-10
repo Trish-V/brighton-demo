@@ -1,8 +1,5 @@
 @charset "utf-8";
-#img1, #img2 , #img3, #img4, #img5, #img6, #img7{
-	object-fit: cover;
-	background-size: cover;
-} 
+
 /* CSS Document */
 
 /******************************
@@ -62,6 +59,23 @@ div
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+#img1, #img2 , #img3, #img4, #img5, #img6, #img7{
+	object-fit: cover;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center; 
+} 
+
+.blog_img_thumb{
+	object-fit: cover !important;
+	background-size: cover !important; 
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100% !important;
+
+}
+
+
 ul
 {
 	list-style: none;
