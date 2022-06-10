@@ -413,3 +413,11 @@
 {
 	
 }
+
+@media only screen and (max-width: 500px)
+{
+	.about
+	{
+		padding-top: 30px;
+	}
+}

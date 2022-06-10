@@ -86,6 +86,8 @@
 	}
 }
 
+
+
 /************
 4. 1100px
 ************/
@@ -417,7 +419,48 @@
 14. 400px
 ************/
 
+
+
 @media only screen and (max-width: 400px)
 {
 	
+}
+
+
+/************
+15. 500px
+************/
+
+@media (max-width:500px) {
+	img#optionalstuff {
+	  display: none;
+	}
+  }
+
+  @media (max-width:500px) {
+h2#optionalstuff {
+	  display: none;
+	}
+  }
+
+  @media (max-width:500px) {
+	div#optionalstuff {
+		  display: none;
+		}
+	  }
+
+
+ 
+
+  .mobile-image { display: none;} 
+   
+   @media only screen 
+ 
+   and (max-device-width : 500px){  .mobile-image { display: inline;}}
+
+
+   @media (max-width: 767px) {
+	.hidden-mobile {
+	  display: none;
+	}
 }
