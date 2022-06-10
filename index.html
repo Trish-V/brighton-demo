@@ -302,6 +302,7 @@
 
       <div
         class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400"
+        style="overflow: auto;"
       >
         <div class="menu_close_container">
           <div class="menu_close">
@@ -309,7 +310,7 @@
             <div></div>
           </div>
         </div>
-        <div class="search">
+        <!-- <div class="search">
           <form action="#" class="header_search_form menu_mm">
             <input
               type="search"
@@ -323,19 +324,123 @@
               <i class="fa fa-search menu_mm" aria-hidden="true"></i>
             </button>
           </form>
-        </div>
+        </div> -->
         <nav class="menu_nav">
           <ul class="menu_mm">
             <li class="menu_mm"><a href="index.html">Home</a></li>
             <li class="menu_mm"><a href="about.html">About</a></li>
-            <ul class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </ul>
-            <li class="menu_mm"><a href="#">Courses</a></li>
-            <li class="menu_mm"><a href="#">Blog</a></li>
-            <li class="menu_mm"><a href="#">Page</a></li>
+
+
+            <li>
+              <a onclick="toggleMenu('phy_mm')" >Physics</a>
+
+              <ul class="phy_mm">
+                <a href="#">GCE Ordinary Level</a>
+
+              </ul>
+              <ul  class="phy_mm">
+                <a href="new-release/physics/gcse-revision-notes.html">↳ <span style="color: #15b6e6; font-size: 15px;">Revision Notes </span></a>
+							 
+              </ul>
+              <ul  class="phy_mm">
+                <a href="new-release/physics/gcse-past-papers.html">↳ <span style="color: #15b6e6; font-size: 15px;">Past Papers and Questions </span></a>
+
+
+              </ul>
+              <ul  class="phy_mm">
+                <a href="#">GCE Advanced Level</a>
+
+              </ul>
+              <ul  class="phy_mm">
+                <a href="new-release/physics/advance-level-revision-notes.html">↳ <span style="color: #15b6e6;  font-size: 15px;">Revision Notes </span></a>
+							 
+              </ul>
+              <ul  class="phy_mm">
+                <a href="new-release/physics/advance-level-past-papers.html">↳ <span style="color: #15b6e6;  font-size: 15px;">Past Papers and Questions </span></a>
+
+              </ul>
+            </li>
+
+
+            <li>
+              <a onclick="toggleMenu('chem_mm')" >Chemistry</a>
+
+              <ul class="chem_mm">
+                <a href="#">GCE Ordinary Level</a>
+
+              </ul>
+              <ul  class="chem_mm">
+                <a href="new-release/chemistry/gcse-revision-notes.html">↳ <span style="color: #15b6e6; font-size: 15px;">Revision Notes </span></a>
+							  
+							 
+              </ul>
+              <ul  class="chem_mm"><a href="new-release/chemistry/gcse-past-papers.html">↳ <span style="color: #15b6e6; font-size: 15px;">Past Papers and Questions </span></a>
+              </ul>
+              <ul  class="chem_mm">
+                <a href="#">GCE Advanced Level</a>
+
+              </ul>
+              <ul  class="chem_mm">
+                <a href="new-release/chemistry/advance-level-revision-notes.html">↳ <span style="color: #15b6e6; font-size: 15px;">Revision Notes </span></a>
+							 
+              </ul>
+              <ul  class="chem_mm">
+                <a href="new-release/chemistry/advance-level-past-papers.html">↳ <span style="color: #15b6e6; font-size: 15px;">Past Papers and Questions </span></a>
+							 
+              </ul>
+            </li>
+        
+            <li>
+              <a onclick="toggleMenu('bio_mm')" >Biology</a>
+
+              <ul class="bio_mm">
+                <a href="#">GCE Ordinary Level</a>
+
+              </ul>
+              <ul  class="bio_mm">
+                <a href="new-release/biology/gcse-revision-notes.html">↳ <span style="color: #15b6e6; font-size: 15px;">Revision Notes </span></a>
+
+              </ul>
+              <ul  class="bio_mm">
+                <a href="new-release/biology/advance-level-past-papers.html">↳ <span style="color: #15b6e6; font-size: 15px;">Past Papers and Questions </span></a>
+
+              </ul>
+              <ul  class="bio_mm">
+                <a href="#">GCE Advanced Level</a>
+
+              </ul>
+              <ul  class="bio_mm">
+                <a href="new-release/biology/advance-level-revision-notes.html">↳ <span style="color: #15b6e6; font-size: 15px;">Revision Notes </span></a>
+
+              </ul>
+              <ul  class="bio_mm">
+                <a href="new-release/biology/advance-level-past-papers.html">↳ <span style="color: #15b6e6; font-size: 15px;">Past Papers and Questions </span></a>
+
+
+              </ul>
+            </li>
+          
+
+            
+            
+            <li class="menu_mm"><a href="#">Mentorship</a></li>
+
+            <li>
+             
+              <ul class="news_mm">
+                <a href="#">News</a>
+                </ul>
+              <ul  class="news_mm">
+                <a href="#">↳ <span style="color: #15b6e6; font-size: 15px;">Journals</span></a>
+
+              </ul>
+              <ul  class="news_mm">
+                <a href="#">↳ <span style="color: #15b6e6; font-size: 15px;">Magazines </span></a>
+
+              </ul></li>
+            
+						  
+            <li class="menu_mm"><a href="scholarships.html">Scholarships</a></li>
             <li class="menu_mm"><a href="contact.html">Contact</a></li>
             <li class="menu_mm"><a href="http://lms.brightoninstitute-colombo.org/sign-up">Register Or Login</a></li>
           </ul>
@@ -678,7 +783,7 @@ register with us for full access
                 <div class="counter_text">
                   <p>
                     Our wealth of online resource for Science subjects are completely
-free, Please register with us. 
+                 free, Please register with us. 
                   </p>
                 </div>
 
