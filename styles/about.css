@@ -428,7 +428,7 @@ section
 }
 .main_nav li:not(:last-child)
 {
-	margin-right: 22px;
+	margin-right: 20px;
 }
 .main_nav li a
 {
