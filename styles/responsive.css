@@ -431,19 +431,19 @@
 15. 500px
 ************/
 
-@media (max-width:500px) {
+@media (max-width:768px) {
 	img#optionalstuff {
 	  display: none;
 	}
   }
 
-  @media (max-width:500px) {
+  @media (max-width:768px) {
 h2#optionalstuff {
 	  display: none;
 	}
   }
 
-  @media (max-width:500px) {
+  @media (max-width:768px) {
 	div#optionalstuff {
 		  display: none;
 		}
@@ -456,10 +456,10 @@ h2#optionalstuff {
    
    @media only screen 
  
-   and (max-device-width : 500px){  .mobile-image { display: inline;}}
+   and (max-device-width : 768px){  .mobile-image { display: inline;}}
 
 
-   @media (max-width: 767px) {
+   @media (max-width: 768px) {
 	.hidden-mobile {
 	  display: none;
 	}
